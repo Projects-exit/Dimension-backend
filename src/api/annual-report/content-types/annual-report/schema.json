@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "annual_reports",
+  "info": {
+    "singularName": "annual-report",
+    "pluralName": "annual-reports",
+    "displayName": "Annual report"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pdf": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "year": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "regulations_pdfs",
+  "info": {
+    "singularName": "regulations-pdf",
+    "pluralName": "regulations-pdfs",
+    "displayName": "Regulations-Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "civil_code_of_armenia": {
+      "type": "string"
+    },
+    "law_on_securities_market": {
+      "type": "string"
+    },
+    "law_on_the_central_bank_of_armenia": {
+      "type": "string"
+    },
+    "law_on_currency_regulation": {
+      "type": "string"
+    },
+    "anti_money_laundering_law": {
+      "type": "string"
+    },
+    "law_on_financial_system_mediator": {
+      "type": "string"
+    },
+    "rules_of_amx_armenia": {
+      "type": "string"
+    },
+    "rules_of_central_depository": {
+      "type": "string"
+    }
+  }
+}
