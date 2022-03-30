@@ -1,10 +1,11 @@
 {
-  "kind": "singleType",
+  "kind": "collectionType",
   "collectionName": "faq_pages",
   "info": {
     "singularName": "faq-page",
     "pluralName": "faq-pages",
-    "displayName": "FAQ-Page"
+    "displayName": "FAQ-Page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
