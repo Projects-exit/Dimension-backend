@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "financial_statments_annuals",
+  "info": {
+    "singularName": "financial-statments-annual",
+    "pluralName": "financial-statments-annuals",
+    "displayName": "Financial statments annual"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "year": {
+      "type": "string"
+    },
+    "pdf": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

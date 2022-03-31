@@ -1,9 +1,11 @@
-// import MenuLogo from './assets/images/logo-strapi.png'
+// import MenuLogo from '../extensions/logo.svg'
 
 export default {
   config: {
     menu : {
       // logo: MenuLogo,
+      
+
     }
     ,
   },

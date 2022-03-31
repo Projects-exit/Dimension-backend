@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "client_rights_pages",
+  "info": {
+    "singularName": "client-rights-page",
+    "pluralName": "client-rights-pages",
+    "displayName": "Client rights Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "regilation_documents_pdf": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

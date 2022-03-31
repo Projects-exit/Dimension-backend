@@ -4,7 +4,8 @@
   "info": {
     "singularName": "annual-report",
     "pluralName": "annual-reports",
-    "displayName": "Annual report"
+    "displayName": "Annual report",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,14 +13,15 @@
   "pluginOptions": {},
   "attributes": {
     "pdf": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "year": {
       "type": "string"

@@ -4,25 +4,67 @@
   "info": {
     "singularName": "financial-statment",
     "pluralName": "financial-statments",
-    "displayName": "Financial statment"
+    "displayName": "Financial statment & Normatives",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "year": {
       "type": "string"
     },
-    "pdf": {
+    "q1_pdf": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
+      ]
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "quarterly",
+        "normatives"
+      ]
+    },
+    "q2_pdf": {
       "type": "media",
-      "multiple": true
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "q3_pdf": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "q4_pdf": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }
