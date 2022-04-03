@@ -18,10 +18,7 @@
     "position": {
       "type": "string"
     },
-    "filter_key": {
-      "type": "string"
-    },
-    "img": {
+    "image": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -43,6 +40,14 @@
     },
     "description": {
       "type": "text"
+    },
+    "filter_key": {
+      "type": "enumeration",
+      "enum": [
+        "board_member",
+        "advisory_group",
+        "core_team"
+      ]
     }
   }
 }
