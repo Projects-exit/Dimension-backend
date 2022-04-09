@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "financial_statments",
+  "collectionName": "normatives",
   "info": {
-    "singularName": "financial-statment",
-    "pluralName": "financial-statments",
-    "displayName": "Financial statment quaterly",
+    "singularName": "normative",
+    "pluralName": "normatives",
+    "displayName": "Normative",
     "description": ""
   },
   "options": {
@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "year": {
-      "type": "string"
-    },
     "q1_pdf": {
       "type": "media",
       "multiple": false,
@@ -24,13 +21,6 @@
         "files",
         "videos",
         "audios"
-      ]
-    },
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "quarterly",
-        "normatives"
       ]
     },
     "q2_pdf": {
@@ -65,6 +55,9 @@
         "videos",
         "audios"
       ]
+    },
+    "year": {
+      "type": "string"
     }
   }
 }

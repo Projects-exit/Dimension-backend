@@ -1,0 +1,54 @@
+{
+  "kind": "singleType",
+  "collectionName": "amd_bond_index_tables",
+  "info": {
+    "singularName": "amd-bond-index-table",
+    "pluralName": "amd-bond-index-tables",
+    "displayName": "AMD Bond index table"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "index_performance_1_month": {
+      "type": "string"
+    },
+    "index_performance_3_month": {
+      "type": "string"
+    },
+    "index_performance_6_month": {
+      "type": "string"
+    },
+    "index_performance_1_year": {
+      "type": "string"
+    },
+    "index_performance_YTD": {
+      "type": "string"
+    },
+    "index_performance_since_inception": {
+      "type": "string"
+    },
+    "index_statistics_index_market_value": {
+      "type": "string"
+    },
+    "index_statistics_number_of_constituent_bonds": {
+      "type": "string"
+    },
+    "index_statistics_total_nominal_value_outstanding": {
+      "type": "string"
+    },
+    "index_statistics_weighted_average_coupon": {
+      "type": "string"
+    },
+    "index_statistics_weighted_average_maturity": {
+      "type": "string"
+    },
+    "index_statistics_weighted_average_modified_duration": {
+      "type": "string"
+    },
+    "index_statistics_weighted_average_yield_to_maturity": {
+      "type": "string"
+    }
+  }
+}

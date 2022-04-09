@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "usd_bond_index_graphs",
+  "info": {
+    "singularName": "usd-bond-index-graph",
+    "pluralName": "usd-bond-index-graphs",
+    "displayName": "USD Bond Index Graph"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "value": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}
