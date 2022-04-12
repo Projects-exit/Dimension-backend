@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "usd_bond_index_factsheets",
+  "info": {
+    "singularName": "usd-bond-index-factsheet",
+    "pluralName": "usd-bond-index-factsheets",
+    "displayName": "USD Bond Index Factsheet"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "year": {
+      "type": "string"
+    },
+    "pdf": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

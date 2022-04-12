@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "amd_bond_index_tables",
+  "collectionName": "usd_corporate_index_tables",
   "info": {
-    "singularName": "amd-bond-index-table",
-    "pluralName": "amd-bond-index-tables",
-    "displayName": "AMD Bond index table",
+    "singularName": "usd-corporate-index-table",
+    "pluralName": "usd-corporate-index-tables",
+    "displayName": "USD corporate index table",
     "description": ""
   },
   "options": {
@@ -25,6 +25,9 @@
       "type": "string"
     },
     "index_performance_YTD": {
+      "type": "string"
+    },
+    "index_performance_last_year": {
       "type": "string"
     },
     "index_performance_since_inception": {
@@ -49,15 +52,6 @@
       "type": "string"
     },
     "index_statistics_weighted_average_yield_to_maturity": {
-      "type": "string"
-    },
-    "index_performance_last_year": {
-      "type": "string"
-    },
-    "index_statistics_government_bonds": {
-      "type": "string"
-    },
-    "index_statistics_corporate_bonds": {
       "type": "string"
     }
   }

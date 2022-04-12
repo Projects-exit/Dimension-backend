@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "amd_bond_index_factsheets",
+  "info": {
+    "singularName": "amd-bond-index-factsheet",
+    "pluralName": "amd-bond-index-factsheets",
+    "displayName": "AMD Bond Index Factsheet",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "year": {
+      "type": "date"
+    },
+    "pdf": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
