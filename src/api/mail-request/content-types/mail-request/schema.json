@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mail_requests",
+  "info": {
+    "singularName": "mail-request",
+    "pluralName": "mail-requests",
+    "displayName": "mail-request"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "cv": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
