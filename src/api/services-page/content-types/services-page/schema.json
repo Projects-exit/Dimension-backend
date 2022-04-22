@@ -4,7 +4,7 @@
   "info": {
     "singularName": "services-page",
     "pluralName": "services-pages",
-    "displayName": "Services-Page",
+    "displayName": "Services-Page ( pdf )",
     "description": ""
   },
   "options": {
@@ -22,6 +22,26 @@
         "videos",
         "audios"
       ]
+    },
+    "regilation_documents_investment_securities_pdf": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "regilation_documents_asset_management_pdf": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

@@ -3,7 +3,7 @@ module.exports = {
 
         const { body, files: { files = {} } } = ctx.request
 
-        const { name, email, phone } = body
+        const { name, email, phone, position, job_type } = body
 
         const templateId = "2",
             to = email,
@@ -13,7 +13,9 @@ module.exports = {
             userData = {
                 name,
                 email,
-                phone
+                phone,
+                position,
+                job_type
             }
 
 
@@ -94,5 +96,49 @@ module.exports = {
         }
 
 
-    }
+    },
+    async userQuestion(ctx, next) {
+
+        const { name, email, title, details } = ctx.request.body
+
+        const templateId = "3",
+            to = email,
+            from = "requests@dimension.am",
+            replyTo = "requests@dimension.am",
+            subject = "[TEST] This is a test using strapi-email-designer", // If provided here will override the template's subject. Can include variables like "Welcome to {{= project_name }}"
+            userData = {
+                name,
+                email,
+                title,
+                details
+            }
+
+        try {
+            
+            // console.log(name, email, item_name, item_description, templateId)
+
+            await strapi.plugin('email-designer').service('email').sendTemplatedEmail(
+                {
+                    to,
+                    from,
+                    replyTo,
+                },
+                {
+                    templateReferenceId : templateId,
+                    subject,
+                },
+                {
+                    userData,
+                }
+            );
+            ctx.response.body = {
+                data: {}
+            };
+        } catch (err) {
+            strapi.log.debug('📺: ', err);
+            return ctx.badRequest(null, err);
+        }
+
+
+    },
 }

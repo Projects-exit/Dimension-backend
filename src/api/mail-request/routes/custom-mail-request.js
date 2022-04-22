@@ -10,5 +10,10 @@ module.exports = {
       path: '/mail-request/researchRequest',
       handler: 'custom-mail-request.researchRequest',
     },
+    {
+      method: 'POST',
+      path: '/mail-request/userQuestion',
+      handler: 'custom-mail-request.userQuestion',
+    },
   ]
 }

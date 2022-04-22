@@ -4,7 +4,8 @@
   "info": {
     "singularName": "financial-statments-annual",
     "pluralName": "financial-statments-annuals",
-    "displayName": "Financial statments annual"
+    "displayName": "Investor relations ( Financial statments annual )",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,14 +16,15 @@
       "type": "string"
     },
     "pdf": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

@@ -4,7 +4,7 @@
   "info": {
     "singularName": "usd-bond-index-graph",
     "pluralName": "usd-bond-index-graphs",
-    "displayName": "USD Bond Index Graph"
+    "displayName": "Indices page ( USD Bond Index Graph )"
   },
   "options": {
     "draftAndPublish": true

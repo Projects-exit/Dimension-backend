@@ -7,7 +7,7 @@ module.exports = ({ env }) => ({
             service: 'Yandex',
             auth: {
               user: 'requests@dimension.am',
-              pass: 'hnsbcsfrjiutiqqb',
+              pass: env('EMAIL_PASS'),
             },
             // ... any custom nodemailer options
           },

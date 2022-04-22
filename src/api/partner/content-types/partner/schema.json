@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "annual_reports",
+  "collectionName": "partners",
   "info": {
-    "singularName": "annual-report",
-    "pluralName": "annual-reports",
-    "displayName": "Investor relations ( Annual report )",
+    "singularName": "partner",
+    "pluralName": "partners",
+    "displayName": "About page ( partner )",
     "description": ""
   },
   "options": {
@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "pdf": {
+    "logo": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -23,7 +23,10 @@
         "audios"
       ]
     },
-    "year": {
+    "address": {
+      "type": "string"
+    },
+    "website": {
       "type": "string"
     }
   }

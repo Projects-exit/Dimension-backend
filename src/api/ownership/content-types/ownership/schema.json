@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ownerships",
+  "info": {
+    "singularName": "ownership",
+    "pluralName": "ownerships",
+    "displayName": "About Page ( ownership )",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "shareholder": {
+      "type": "string"
+    },
+    "share_participation": {
+      "type": "string"
+    }
+  }
+}

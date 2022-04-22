@@ -4,7 +4,8 @@
   "info": {
     "singularName": "mail-request",
     "pluralName": "mail-requests",
-    "displayName": "mail-request"
+    "displayName": "Mail request",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,14 +25,15 @@
       "type": "text"
     },
     "cv": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }
