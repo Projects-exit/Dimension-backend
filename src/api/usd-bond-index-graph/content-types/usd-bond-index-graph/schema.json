@@ -1,5 +1,6 @@
 {
   "kind": "collectionType",
+  "filter" : "indices",
   "collectionName": "usd_bond_index_graphs",
   "info": {
     "singularName": "usd-bond-index-graph",

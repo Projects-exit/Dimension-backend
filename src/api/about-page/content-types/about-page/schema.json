@@ -4,7 +4,7 @@
   "info": {
     "singularName": "about-page",
     "pluralName": "about-pages",
-    "displayName": "About-page",
+    "displayName": "About",
     "description": ""
   },
   "options": {
@@ -46,14 +46,15 @@
       ]
     },
     "central_bank_regulation_pdf": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }
