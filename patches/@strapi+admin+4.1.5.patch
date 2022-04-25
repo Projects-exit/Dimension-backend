@@ -1,0 +1,138 @@
+diff --git a/node_modules/@strapi/admin/admin/src/content-manager/pages/App/LeftMenu/index.js b/node_modules/@strapi/admin/admin/src/content-manager/pages/App/LeftMenu/index.js
+index c09accf..695aa03 100644
+--- a/node_modules/@strapi/admin/admin/src/content-manager/pages/App/LeftMenu/index.js
++++ b/node_modules/@strapi/admin/admin/src/content-manager/pages/App/LeftMenu/index.js
+@@ -43,6 +43,16 @@ const LeftMenu = () => {
+   const intlCollectionTypeLinks = toIntl(collectionTypeLinks);
+   const intlSingleTypeLinks = toIntl(singleTypeLinks);
+ 
++  // extra addition
++  const combinedLinks = [
++    ...sortBy(matchByTitle(intlCollectionTypeLinks, search), object =>
++    object.title.toLowerCase()
++  ),
++  ...sortBy(matchByTitle(intlSingleTypeLinks, search), object =>
++      object.title.toLowerCase()
++    ),
++  ]
++
+   const menu = [
+     {
+       id: 'collectionTypes',
+@@ -51,21 +61,30 @@ const LeftMenu = () => {
+         defaultMessage: 'Collection Types',
+       },
+       searchable: true,
+-      links: sortBy(matchByTitle(intlCollectionTypeLinks, search), object =>
+-        object.title.toLowerCase()
+-      ),
+-    },
+-    {
+-      id: 'singleTypes',
+-      title: {
+-        id: getTrad('components.LeftMenu.single-types'),
+-        defaultMessage: 'Single Types',
+-      },
+-      searchable: true,
+-      links: sortBy(matchByTitle(intlSingleTypeLinks, search), object =>
+-        object.title.toLowerCase()
+-      ),
++      links: combinedLinks,
+     },
++    // {
++    //   id: 'collectionTypes',
++    //   title: {
++    //     id: getTrad('components.LeftMenu.collection-types'),
++    //     defaultMessage: 'Collection Types',
++    //   },
++    //   searchable: true,
++    //   links: sortBy(matchByTitle(intlCollectionTypeLinks, search), object =>
++    //     object.title.toLowerCase()
++    //   ),
++    // },
++    // {
++    //   id: 'singleTypes',
++    //   title: {
++    //     id: getTrad('components.LeftMenu.single-types'),
++    //     defaultMessage: 'Single Types',
++    //   },
++    //   searchable: true,
++    //   links: sortBy(matchByTitle(intlSingleTypeLinks, search), object =>
++    //     object.title.toLowerCase()
++    //   ),
++    // },
+   ];
+ 
+   const handleClear = () => {
+@@ -81,6 +100,28 @@ const LeftMenu = () => {
+     defaultMessage: 'Content',
+   });
+ 
++  // This is an extra code
++  const convertToObj = (items) => {
++    let _a = {}
++    items.forEach(item => {
++      if (_a[item.filter]) {
++        _a[item.filter].push(item)
++      } else {
++        _a[item.filter] = [item]
++      }
++
++    })
++    return _a
++  }
++
++  const Subhead = (props) => {
++    return (
++      <div style={{paddingLeft : '10px', paddingTop : "10px"}} >
++        {props.children}
++      </div>
++      )
++  }
++
+   return (
+     <SubNav ariaLabel={label}>
+       <SubNavHeader
+@@ -101,21 +142,34 @@ const LeftMenu = () => {
+             section.title.values
+           );
+ 
++          // Changed code
++          const new_sorted_links = section.links.map(link => ({...link, filter : link.title.split(" ")[0]}) )
++          const sorted_links = convertToObj(new_sorted_links)
++          // console.log(sorted_links)
++
++
+           return (
+             <SubNavSection
+               key={section.id}
+               label={label}
+               badgeLabel={section.links.length.toString()}
+             >
+-              {section.links.map(link => {
+-                const search = link.search ? `?${link.search}` : '';
+-
+-                return (
+-                  <SubNavLink key={link.uid} to={`${link.to}${search}`}>
+-                    {link.title}
+-                  </SubNavLink>
+-                );
++              {Object.keys(sorted_links).map(key => {
++
++                return (<>
++                  <Subhead > {key} </Subhead>
++                  {sorted_links[key].map(link => {
++                    const search = link.search ? `?${link.search}` : '';
++
++                    return (
++                      <SubNavLink key={link.uid} to={`${link.to}${search}`}>
++                        {link.title}
++                      </SubNavLink>
++                    );
++                  })}
++                </>)
+               })}
++              
+             </SubNavSection>
+           );
+         })}
