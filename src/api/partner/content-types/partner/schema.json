@@ -28,6 +28,9 @@
     },
     "website": {
       "type": "string"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }

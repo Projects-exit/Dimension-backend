@@ -1,0 +1,42 @@
+{
+  "kind": "singleType",
+  "collectionName": "services_page_asset_managements",
+  "info": {
+    "singularName": "services-page-asset-management",
+    "pluralName": "services-page-asset-managements",
+    "displayName": "Services Page asset management",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "service_heading_1": {
+      "type": "string"
+    },
+    "service_description_2": {
+      "type": "richtext"
+    },
+    "service_description_1": {
+      "type": "richtext"
+    },
+    "service_heading_2": {
+      "type": "string"
+    },
+    "regilation_documents": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "asset_management": {
+      "type": "richtext"
+    }
+  }
+}

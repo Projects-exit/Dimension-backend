@@ -60,7 +60,37 @@
       "type": "text"
     },
     "hero_description_2": {
+      "type": "text"
+    },
+    "hero_description_awards": {
+      "type": "text"
+    },
+    "buisness_principle_1": {
       "type": "string"
+    },
+    "buisness_principle_description_1": {
+      "type": "text"
+    },
+    "buisness_principle_2": {
+      "type": "string"
+    },
+    "buisness_principle_description_2": {
+      "type": "text"
+    },
+    "buisness_principle_3": {
+      "type": "string"
+    },
+    "buisness_principle_description_3": {
+      "type": "text"
+    },
+    "buisness_principle_4": {
+      "type": "string"
+    },
+    "buisness_principle_description_4": {
+      "type": "text"
+    },
+    "ownership_description": {
+      "type": "text"
     }
   }
 }

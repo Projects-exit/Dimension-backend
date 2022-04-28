@@ -4,7 +4,7 @@
   "info": {
     "singularName": "services-page",
     "pluralName": "services-pages",
-    "displayName": "Services Page ( pdf )",
+    "displayName": "Services Page Capital Market Advisory",
     "description": ""
   },
   "options": {
@@ -44,6 +44,33 @@
         "videos",
         "audios"
       ]
+    },
+    "capital_market_advisory": {
+      "type": "richtext"
+    },
+    "service_heading_1": {
+      "type": "string"
+    },
+    "service_description_1": {
+      "type": "richtext"
+    },
+    "service_heading_2": {
+      "type": "string"
+    },
+    "service_description_2": {
+      "type": "richtext"
+    },
+    "service_heading_3": {
+      "type": "string"
+    },
+    "service_description_3": {
+      "type": "richtext"
+    },
+    "service_heading_4": {
+      "type": "string"
+    },
+    "service_description_4": {
+      "type": "richtext"
     }
   }
 }

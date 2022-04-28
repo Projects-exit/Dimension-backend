@@ -1,0 +1,54 @@
+{
+  "kind": "singleType",
+  "collectionName": "services_page_investment_services",
+  "info": {
+    "singularName": "services-page-investment-service",
+    "pluralName": "services-page-investment-services",
+    "displayName": "Services Page investment service",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "service_heading_1": {
+      "type": "string"
+    },
+    "service_description_2": {
+      "type": "richtext"
+    },
+    "service_description_4": {
+      "type": "richtext"
+    },
+    "service_description_3": {
+      "type": "richtext"
+    },
+    "service_description_1": {
+      "type": "richtext"
+    },
+    "service_heading_2": {
+      "type": "string"
+    },
+    "service_heading_3": {
+      "type": "string"
+    },
+    "service_heading_4": {
+      "type": "string"
+    },
+    "regilation_documents": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "investment_securities_services": {
+      "type": "richtext"
+    }
+  }
+}
