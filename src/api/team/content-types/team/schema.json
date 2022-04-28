@@ -48,6 +48,12 @@
         "advisory_group",
         "core_team"
       ]
+    },
+    "type_of_qualification": {
+      "type": "string"
+    },
+    "qualification_details": {
+      "type": "string"
     }
   }
 }

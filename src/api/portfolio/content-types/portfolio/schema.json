@@ -4,7 +4,8 @@
   "info": {
     "singularName": "portfolio",
     "pluralName": "portfolios",
-    "displayName": "Portfolio"
+    "displayName": "Portfolio",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,14 +25,25 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "type_of_project": {
+      "type": "enumeration",
+      "enum": [
+        "Equity Placement",
+        "Bond Placement",
+        "Market Making",
+        "IPO & Listing Advisory",
+        "M&A Advisory"
+      ]
     }
   }
 }

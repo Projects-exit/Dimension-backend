@@ -4,7 +4,8 @@
   "info": {
     "singularName": "amd-bond-index-graph",
     "pluralName": "amd-bond-index-graphs",
-    "displayName": "Indices Page ( AMD Bond Index Graph )"
+    "displayName": "Indices Page ( AMD Bond Index Graph )",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true

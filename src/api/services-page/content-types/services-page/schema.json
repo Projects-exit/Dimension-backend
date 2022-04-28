@@ -4,7 +4,7 @@
   "info": {
     "singularName": "services-page",
     "pluralName": "services-pages",
-    "displayName": "Services-Page ( pdf )",
+    "displayName": "Services Page ( pdf )",
     "description": ""
   },
   "options": {
@@ -24,24 +24,26 @@
       ]
     },
     "regilation_documents_investment_securities_pdf": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "regilation_documents_asset_management_pdf": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

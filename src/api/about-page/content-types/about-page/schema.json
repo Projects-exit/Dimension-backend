@@ -4,7 +4,7 @@
   "info": {
     "singularName": "about-page",
     "pluralName": "about-pages",
-    "displayName": "About",
+    "displayName": "About Page",
     "description": ""
   },
   "options": {
@@ -55,6 +55,12 @@
         "videos",
         "audios"
       ]
+    },
+    "hero_description_1": {
+      "type": "text"
+    },
+    "hero_description_2": {
+      "type": "string"
     }
   }
 }

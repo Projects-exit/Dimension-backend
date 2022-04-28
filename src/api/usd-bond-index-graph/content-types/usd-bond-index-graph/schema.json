@@ -1,11 +1,11 @@
 {
   "kind": "collectionType",
-  "filter" : "indices",
   "collectionName": "usd_bond_index_graphs",
   "info": {
     "singularName": "usd-bond-index-graph",
     "pluralName": "usd-bond-index-graphs",
-    "displayName": "Indices page ( USD Bond Index Graph )"
+    "displayName": "Indices page ( USD Bond Index Graph )",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
