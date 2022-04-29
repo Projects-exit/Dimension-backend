@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "investor_relations",
+  "info": {
+    "singularName": "investor-relation",
+    "pluralName": "investor-relations",
+    "displayName": "Reports (Investor relations)",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "update_date": {
+      "type": "datetime"
+    }
+  }
+}

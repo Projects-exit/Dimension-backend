@@ -4,7 +4,7 @@
   "info": {
     "singularName": "amd-bond-index-table",
     "pluralName": "amd-bond-index-tables",
-    "displayName": "Indices Page ( AMD Bond index table )",
+    "displayName": "Indices Page ( AMD Bond Index table )",
     "description": ""
   },
   "options": {
@@ -59,6 +59,12 @@
     },
     "index_statistics_corporate_bonds": {
       "type": "string"
+    },
+    "desclaimer": {
+      "type": "text"
+    },
+    "index_description": {
+      "type": "text"
     }
   }
 }

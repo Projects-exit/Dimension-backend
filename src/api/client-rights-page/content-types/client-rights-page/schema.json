@@ -22,6 +22,33 @@
         "videos",
         "audios"
       ]
+    },
+    "client_rights_description": {
+      "type": "richtext"
+    },
+    "client_rights_heading_2": {
+      "type": "string"
+    },
+    "client_rights_description_2": {
+      "type": "richtext"
+    },
+    "mediator_name": {
+      "type": "string"
+    },
+    "mediator_address": {
+      "type": "text"
+    },
+    "mediator_phone": {
+      "type": "string"
+    },
+    "mediator_fax": {
+      "type": "string"
+    },
+    "mediator_email": {
+      "type": "string"
+    },
+    "mediator_website": {
+      "type": "string"
     }
   }
 }

@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "financial_statments_annuals",
+  "collectionName": "regulations_page_laws",
   "info": {
-    "singularName": "financial-statments-annual",
-    "pluralName": "financial-statments-annuals",
-    "displayName": "Reports ( Financial statments annual )",
+    "singularName": "regulations-page-law",
+    "pluralName": "regulations-page-laws",
+    "displayName": "Regulations-Page (laws pdf)",
     "description": ""
   },
   "options": {
@@ -12,8 +12,8 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "year": {
-      "type": "string"
+    "title": {
+      "type": "text"
     },
     "pdf": {
       "type": "media",

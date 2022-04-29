@@ -49,6 +49,9 @@
     },
     "investment_securities_services": {
       "type": "richtext"
+    },
+    "short_desc": {
+      "type": "text"
     }
   }
 }

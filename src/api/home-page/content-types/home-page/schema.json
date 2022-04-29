@@ -26,6 +26,21 @@
     },
     "vision": {
       "type": "text"
+    },
+    "market_researches": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::market-research.market-research"
+    },
+    "news": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article"
+    },
+    "portfolios": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::portfolio.portfolio"
     }
   }
 }

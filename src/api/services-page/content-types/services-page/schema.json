@@ -23,28 +23,6 @@
         "audios"
       ]
     },
-    "regilation_documents_investment_securities_pdf": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "regilation_documents_asset_management_pdf": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "capital_market_advisory": {
       "type": "richtext"
     },
