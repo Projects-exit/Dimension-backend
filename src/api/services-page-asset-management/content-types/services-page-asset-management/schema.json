@@ -37,6 +37,9 @@
     },
     "asset_management": {
       "type": "richtext"
+    },
+    "short_desc": {
+      "type": "text"
     }
   }
 }

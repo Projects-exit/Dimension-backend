@@ -42,6 +42,9 @@ module.exports = {
         const client_rights = await strapi.entityService.findMany('api::client-rights-page.client-rights-page', {
             populate : ["regilation_documents_pdf"]
         })
+        const protfolios = await strapi.entityService.findMany('api::portfolio.portfolio', {
+            populate : ["image"]
+        })
         // ----------------------------
         // Investor relation
         // ----------------------------
@@ -67,6 +70,7 @@ module.exports = {
         const regulation_laws = await strapi.entityService.findMany('api::regulations-page-law.regulations-page-law', {
             populate : ["pdf"]
         })
+        const faq = await strapi.entityService.findMany('api::faq-page.faq-page', {})
 
 
         // console.log(home_page)
@@ -84,6 +88,7 @@ module.exports = {
                 },
                 market_research,
                 client_rights,
+                protfolios,
                 reports : {
                     annual_report,
                     quaterly_financial_statement,
@@ -94,7 +99,8 @@ module.exports = {
                 regulations : {
                     regulation,
                     regulation_laws
-                }
+                },
+                faq
             }
         };
 

@@ -49,6 +49,9 @@
     },
     "service_description_4": {
       "type": "richtext"
+    },
+    "short_desc": {
+      "type": "text"
     }
   }
 }
