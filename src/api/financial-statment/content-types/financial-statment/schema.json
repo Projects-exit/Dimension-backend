@@ -26,13 +26,6 @@
         "audios"
       ]
     },
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "quarterly",
-        "normatives"
-      ]
-    },
     "q2_pdf": {
       "type": "media",
       "multiple": false,

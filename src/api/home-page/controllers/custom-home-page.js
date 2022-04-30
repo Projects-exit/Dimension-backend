@@ -86,6 +86,7 @@ module.exports = {
             populate : ["pdf"]
         })
         const faq = await strapi.entityService.findMany('api::faq-page.faq-page', {})
+        const careers = await strapi.entityService.findMany('api::career.career', {})
 
 
         // console.log(home_page)
@@ -118,7 +119,8 @@ module.exports = {
                     regulation,
                     regulation_laws
                 },
-                faq
+                faq,
+                careers
             }
         };
 
