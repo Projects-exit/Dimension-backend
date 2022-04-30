@@ -65,6 +65,9 @@
     },
     "index_description": {
       "type": "text"
+    },
+    "graph_JSON_format": {
+      "type": "json"
     }
   }
 }

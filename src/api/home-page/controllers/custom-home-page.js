@@ -19,6 +19,13 @@ module.exports = {
         const about_page = await strapi.entityService.findMany('api::about-page.about-page', {
             populate: ["license_pdf", "charter_pdf", "regilation_pdf", "central_bank_regulation_pdf"]
         })
+        const team = await strapi.entityService.findMany('api::team.team', {
+            populate: ["image"]
+        })
+        const ownership = await strapi.entityService.findMany('api::ownership.ownership', {})
+        const partners = await strapi.entityService.findMany('api::partner.partner', {
+            populate: ["logo"]
+        })
         const service_page_capital_market = await strapi.entityService.findMany('api::services-page.services-page', {
             populate: ["regilation_documents_capital_market_pdf", "regilation_documents_investment_securities_pdf", "regilation_documents_asset_management_pdf"]
         })
@@ -33,6 +40,12 @@ module.exports = {
         // ----------------------------
         const indices_amd_table = await strapi.entityService.findMany('api::amd-bond-index-table.amd-bond-index-table', {})
         const indices_usd_table = await strapi.entityService.findMany('api::usd-corporate-index-table.usd-corporate-index-table', {})
+        const indices_amd_factsheet = await strapi.entityService.findMany('api::amd-bond-index-factsheet.amd-bond-index-factsheet', {
+            populate : ['pdf']
+        })
+        const indices_usd_factsheet = await strapi.entityService.findMany('api::usd-bond-index-factsheet.usd-bond-index-factsheet', {
+            populate : ['pdf']
+        })
          // ----------------------------
         // Market research
         // ----------------------------
@@ -79,12 +92,15 @@ module.exports = {
                 home_page,
                 footer,
                 about_page,
+                team,
+                partners,
+                ownership,
                 service_page_capital_market,
                 service_page_investment_service,
                 service_page_asset_management,
                 indices: {
-                    amd: { indices_amd_table },
-                    usd: { indices_usd_table }
+                    amd: { indices_amd_table, indices_amd_factsheet },
+                    usd: { indices_usd_table, indices_usd_factsheet }
                 },
                 market_research,
                 client_rights,
