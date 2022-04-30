@@ -41,10 +41,12 @@ module.exports = {
         const indices_amd_table = await strapi.entityService.findMany('api::amd-bond-index-table.amd-bond-index-table', {})
         const indices_usd_table = await strapi.entityService.findMany('api::usd-corporate-index-table.usd-corporate-index-table', {})
         const indices_amd_factsheet = await strapi.entityService.findMany('api::amd-bond-index-factsheet.amd-bond-index-factsheet', {
-            populate : ['pdf']
+            populate : ['pdf'],
+            sort : ['year:desc']
         })
         const indices_usd_factsheet = await strapi.entityService.findMany('api::usd-bond-index-factsheet.usd-bond-index-factsheet', {
-            populate : ['pdf']
+            populate : ['pdf'],
+            sort : ['year:desc']
         })
          // ----------------------------
         // Market research

@@ -61,7 +61,7 @@
       "type": "text"
     },
     "graph_JSON_format": {
-      "type": "json"
+      "type": "text"
     }
   }
 }
