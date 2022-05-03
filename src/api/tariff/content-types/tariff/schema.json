@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tariffs",
+  "info": {
+    "singularName": "tariff",
+    "pluralName": "tariffs",
+    "displayName": "Tariff"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "pdf": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

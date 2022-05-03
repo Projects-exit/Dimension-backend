@@ -85,6 +85,9 @@ module.exports = {
         const regulation_laws = await strapi.entityService.findMany('api::regulations-page-law.regulations-page-law', {
             populate : ["pdf"]
         })
+        const tariffs = await strapi.entityService.findMany('api::tariff.tariff', {
+            populate : ["pdf"]
+        })
         const faq = await strapi.entityService.findMany('api::faq-page.faq-page', {})
         const careers = await strapi.entityService.findMany('api::career.career', {})
 
@@ -120,7 +123,8 @@ module.exports = {
                     regulation_laws
                 },
                 faq,
-                careers
+                careers,
+                tariffs
             }
         };
 

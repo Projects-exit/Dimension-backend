@@ -15,6 +15,10 @@
     "year": {
       "type": "string"
     },
+    "q1_pdf_text": {
+      "type": "string",
+      "default": "1 Quater"
+    },
     "q1_pdf": {
       "type": "media",
       "multiple": false,
@@ -25,6 +29,10 @@
         "videos",
         "audios"
       ]
+    },
+    "q2_pdf_text": {
+      "type": "string",
+      "default": "2 Quater"
     },
     "q2_pdf": {
       "type": "media",
@@ -37,6 +45,10 @@
         "audios"
       ]
     },
+    "q3_pdf_text": {
+      "type": "string",
+      "default": "3 Quater"
+    },
     "q3_pdf": {
       "type": "media",
       "multiple": false,
@@ -47,6 +59,10 @@
         "videos",
         "audios"
       ]
+    },
+    "q4_pdf_text": {
+      "type": "string",
+      "default": "4 Quater"
     },
     "q4_pdf": {
       "type": "media",
@@ -59,5 +75,6 @@
         "audios"
       ]
     }
+   
   }
 }
