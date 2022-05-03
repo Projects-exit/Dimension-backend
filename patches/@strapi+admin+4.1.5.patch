@@ -1,5 +1,5 @@
 diff --git a/node_modules/@strapi/admin/admin/src/content-manager/pages/App/LeftMenu/index.js b/node_modules/@strapi/admin/admin/src/content-manager/pages/App/LeftMenu/index.js
-index c09accf..695aa03 100644
+index c09accf..2de2cca 100644
 --- a/node_modules/@strapi/admin/admin/src/content-manager/pages/App/LeftMenu/index.js
 +++ b/node_modules/@strapi/admin/admin/src/content-manager/pages/App/LeftMenu/index.js
 @@ -43,6 +43,16 @@ const LeftMenu = () => {
@@ -98,7 +98,7 @@ index c09accf..695aa03 100644
            );
  
 +          // Changed code
-+          const new_sorted_links = section.links.map(link => ({...link, filter : link.title.split(" ")[0]}) )
++          const new_sorted_links = section.links.map(link => ({...link, filter : link.title.split(" ")[0]}) ).sort((a, b) => a.filter.localeCompare(b.filter))
 +          const sorted_links = convertToObj(new_sorted_links)
 +          // console.log(sorted_links)
 +
